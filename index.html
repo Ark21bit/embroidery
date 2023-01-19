@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="/dist/output.css" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .container{   
+                max-width: 1466px ;
+                padding-left: 13px;    
+                padding-right: 13px;    
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="pt-3 pb-5">
+        <div class="container flex gap-12 ">
+            <div class="flex flex-col flex-1 grow-[1.15]">
+                <img src="assets/img/logo.svg" alt="" class="w-fit">
+                <div class="flex gap-12">
+                    <button class="flex gap-5 py-2 pl-6 pr-11 bg-[#A10B0B] items-center rounded-[100px] text-white"><img src="assets/img/btn_menu.svg" alt="">Каталог</button>
+                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px]"><input type="search" placeholder="Поиск" class="grow"><img src="assets/img/search.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1">
+                <div class="flex gap-5 justify-between items-center h-4/6 ">
+                    <a href="#" class="flex items-center text-lg font-bold"><img src="assets/img/telefon.svg" class="mr-2" alt="">8-800-700-90-78</a>
+                    <div class="flex gap-4 items-center">
+                        <a href="#" class="text-xs font-medium text-[#4F4F4F]">О компании</a>
+                        <a href="#" class="text-xs font-medium text-[#4F4F4F]">Доставка и оплата</a>
+                        <a href="#" class="text-xs font-medium text-[#4F4F4F]">Контакты</a>
+                    </div>
+                </div>
+                <div class="flex gap-5 justify-between items-center h-2/6">
+                    <nav class="flex gap-5 items-center">
+                        <a href="#" class="text-lg font-bold text-black">Бренды</a>
+                        <a href="#" class="text-lg font-bold text-black">Сюжеты</a>
+                        <a href="#" class="text-lg font-bold text-black">Акции</a>
+                        <a href="#" class="text-lg font-bold text-black">Хвастушки</a>
+                    </nav>
+                    <div class="flex gap items-end gap-5">
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="relative">
+                                <img src="assets/img/heart.svg" alt=""><div class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">2</div>
+                            </div>
+                            <a href="#" class="text-xs font-medium text-[#3E403F]">Избранное</a>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">                            
+                            <img src="assets/img/user.svg" alt="">                       
+                            <a href="#" class="text-xs font-medium text-[#3E403F]">Личный кабинет</a>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="relative">
+                                <img src="assets/img/shopping-cart.svg" alt=""><div class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">2</div>
+                            </div>
+                            <a href="#" class="text-xs font-medium text-[#3E403F]">Корзина</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="Prose">
+        <div class="swiper h-[400px] w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide bg-[url('/assets/img/slider_bg.png')] relative">
+                <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                <div>
+                    <div>      
+                        <p class="text-white font-medium text-4xl"></p>                  
+                        <p class="text-white font-medium text-6xl"></p>                  
+                        <p></p>
+                        <a href=""></a>
+                        <p></p>
+                    </div>
+                    <p></p>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>              
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev "><img src="assets/img/prev_arrow.svg" alt=""></div>
+            <div class="swiper-button-next "><img src="assets/img/next_arrow.svg" alt=""></div>
+          </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+</body>
+</html>

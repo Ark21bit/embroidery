@@ -22,10 +22,16 @@ body{
     grid-column: full;
 }
 
-.swiper{
-    padding: 0 32px 0 25px;
-    box-sizing: content-box;   
-    margin: 0 -32px 0 -25px;
+.swiperMain{
+    padding: 0 32px 0 25px!important;
+    box-sizing: content-box!important;   
+    margin: 0 -32px 0 -25px!important;
+}
+
+.swiperSecond{
+    padding: 0 20px 0 20px!important;
+    box-sizing: content-box!important;   
+    margin: 0 -20px 0 -20px!important;
 }
 
 .swiper-button-next, .swiper-button-prev {    

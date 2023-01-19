@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link href="/dist/output.css" rel="stylesheet">  
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/style/main.css">
     <style type="text/tailwindcss">
@@ -19,23 +21,28 @@
                 padding-left: 13px;    
                 padding-right: 13px;    
                 margin: 0 auto;
+                box-sizing: border-box;
             }
         }
     </style>
 </head>
+
 <body>
-    <header class="pt-3 pb-5">
+    <header class="pt-3 pb-5 mb-5">
         <div class="container flex gap-12 ">
             <div class="flex flex-col flex-1 grow-[1.15]">
                 <img src="assets/img/logo.svg" alt="" class="w-fit">
                 <div class="flex gap-12">
-                    <button class="flex gap-5 py-2 pl-6 pr-11 bg-[#A10B0B] items-center rounded-[100px] text-white"><img src="assets/img/btn_menu.svg" alt="">Каталог</button>
-                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px]"><input type="search" placeholder="Поиск" class="grow"><img src="assets/img/search.svg" alt=""></div>
+                    <button class="flex gap-5 py-2 pl-6 pr-11 bg-[#A10B0B] items-center rounded-[100px] text-white"><img
+                            src="assets/img/btn_menu.svg" alt="">Каталог</button>
+                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px] ">
+                        <input type="search" placeholder="Поиск" class="grow outline-none"><img src="assets/img/search.svg" alt=""></div>
                 </div>
             </div>
             <div class="flex flex-col flex-1">
                 <div class="flex gap-5 justify-between items-center h-4/6 ">
-                    <a href="#" class="flex items-center leading-[140%] text-lg font-bold"><img src="assets/img/telefon.svg" class="mr-2" alt="">8-800-700-90-78</a>
+                    <a href="#" class="flex items-center leading-[140%] text-lg font-bold"><img
+                            src="assets/img/telefon.svg" class="mr-2" alt="">8-800-700-90-78</a>
                     <div class="flex gap-4 items-center">
                         <a href="#" class="leading-[140%] text-xs font-medium text-[#4F4F4F]">О компании</a>
                         <a href="#" class="leading-[140%] text-xs font-medium text-[#4F4F4F]">Доставка и оплата</a>
@@ -52,17 +59,23 @@
                     <div class="flex gap items-end gap-5">
                         <div class="flex flex-col items-center gap-2">
                             <div class="relative">
-                                <img src="assets/img/heart.svg" alt=""><div class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">2</div>
+                                <img src="assets/img/heart.svg" alt="">
+                                <div
+                                    class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">
+                                    2</div>
                             </div>
                             <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F]">Избранное</a>
                         </div>
-                        <div class="flex flex-col items-center gap-2">                            
-                            <img src="assets/img/user.svg" alt="">                       
+                        <div class="flex flex-col items-center gap-2">
+                            <img src="assets/img/user.svg" alt="">
                             <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F]">Личный кабинет</a>
                         </div>
                         <div class="flex flex-col items-center gap-2">
                             <div class="relative">
-                                <img src="assets/img/shopping-cart.svg" alt=""><div class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">2</div>
+                                <img src="assets/img/shopping-cart.svg" alt="">
+                                <div
+                                    class="absolute top-0 left-[60%] leading-[12px] py-[1px] rounded-[100px] text-[10px] font-medium text-white px-[6px] bg-[#A10B0B] ">
+                                    2</div>
                             </div>
                             <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F]">Корзина</a>
                         </div>
@@ -72,66 +85,121 @@
         </div>
     </header>
     <main class="Prose">
-        <div class="swiper h-[400px] w-full">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
-                <div class="flex items-start">
-                    <div class="text-white mt-[119px] ml-[159px]">      
-                        <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>                  
-                        <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p> 
-                        <a href="#" class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black" >Подробнее</a>
-                        <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды отключены.</p>
+        <div class="grid-full Prose mb-12 bg-[url('assets/img/image1.png')] bg-no-repeat bg-[center_top_-52px]">
+            <div class="swiper swiperMain h-[400px] container w-full ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <div class="flex items-start">
+                            <div class="text-white mt-[119px] ml-[159px]">
+                                <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
+                                <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p>
+                                <a href="#"
+                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
+                                <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды
+                                    отключены.</p>
+                            </div>
+                            <div
+                                class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full">
+                                <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full" >
-                        <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
-                    </div>                    
-                </div>
-              </div>
 
-              <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
-                <div class="flex items-start">
-                    <div class="text-white mt-[119px] ml-[159px]">      
-                        <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>                  
-                        <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p> 
-                        <a href="#" class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black" >Подробнее</a>
-                        <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды отключены.</p>
+                    <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <div class="flex items-start">
+                            <div class="text-white mt-[119px] ml-[159px]">
+                                <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
+                                <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p>
+                                <a href="#"
+                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
+                                <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды
+                                    отключены.</p>
+                            </div>
+                            <div
+                                class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full">
+                                <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full" >
-                        <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
-                    </div>                    
-                </div>
-              </div>
-              
-              <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
-                <div class="flex items-start">
-                    <div class="text-white mt-[119px] ml-[159px]">      
-                        <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>                  
-                        <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p> 
-                        <a href="#" class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black" >Подробнее</a>
-                        <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды отключены.</p>
+
+                    <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <div class="flex items-start">
+                            <div class="text-white mt-[119px] ml-[159px]">
+                                <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
+                                <p class="text-white font-medium leading-[75px] text-[64px] mb-7">СКИДКИ НА ВСЁ</p>
+                                <a href="#"
+                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
+                                <p class="leading-[16px] text-sm">*На время акции накопительная скидка и промокоды
+                                    отключены.</p>
+                            </div>
+                            <div
+                                class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full">
+                                <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center px-6 py-11 mt-[119px] ml-[94px] bg-[#D90000] z-10 rounded-full" >
-                        <p class="text-[64px] leading-[75px] font-medium  text-white">75%</p>
-                    </div>                    
+
                 </div>
-              </div>
-                           
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev "><img src="assets/img/prev_arrow.svg" alt=""></div>
+                <div class="swiper-button-next "><img src="assets/img/next_arrow.svg" alt=""></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
+        </div>
+        <div>
+            <h2 class="font-bold text-[28px] leading-none mb-7">Популярные категории </h2>
+            <div class="swiper swiperSecond h-[150px] w-full">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Наборы <br> для вышивания</p>
+                        <img src="assets/img/image_category1.png" alt="" class="absolute top-[50%] translate-y-[-50%] right-0 z-[-1]">
+                    </div>
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Алмазная <br> вышивка</p>
+                        <img src="assets/img/image_category4.png" alt="" class="absolute top-[50%] translate-y-[-50%] right-0 z-[-1]">
+                    </div>
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Товары <br> для творчества</p>
+                        <img src="assets/img/image_category2.png" alt="" class="absolute top-[50%] translate-y-[-50%] right-0 z-[-1]">
+                    </div>
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Изготовление <br> бижутерии</p>
+                        <img src="assets/img/image_category5.png" alt="" class="absolute top-[50%] translate-y-[-50%]  right-0 z-[-1] ">
+                    </div>
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Электронные <br> схемы</p>
+                        <img src="assets/img/image_category3.png" alt="" class="absolute top-[50%] translate-y-[-50%] right-0 z-[-1]">
+                    </div>
+                    <div
+                        class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
+                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Электронные <br> схемы</p>
+                        <img src="assets/img/image_category3.png" alt="" class="absolute top-[50%] translate-y-[-50%] right-0 z-[-1]">
+                    </div>
+                </div>
+                 <!-- If we need navigation buttons -->
             <div class="swiper-button-prev "><img src="assets/img/prev_arrow.svg" alt=""></div>
             <div class="swiper-button-next "><img src="assets/img/next_arrow.svg" alt=""></div>
-          </div>
+            </div>           
+        </div>
+        </div>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
 </body>
+
 </html>

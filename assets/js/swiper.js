@@ -18,8 +18,22 @@ const swiperMain = new Swiper('.swiperMain', {
 
 const swiperSecond = new Swiper('.swiperSecond', {
     // Optional parameters 
-    spaceBetween:32,
+    spaceBetween:20,
     slidesPerView:5,
+    // If we need pagination   
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }, 
+    
+  });
+
+const swiperPrimary = new Swiper('.swiperPrimary', {
+    // Optional parameters 
+    spaceBetween:20,
+    slidesPerView:4,
     // If we need pagination   
   
     // Navigation arrows

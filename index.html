@@ -28,16 +28,18 @@
 
 <body>
     <header class="pt-3 pb-5 mb-5">
-        <div class="container flex gap-12 ">
-            <div class="flex md:flex-col flex-1 grow-[1.15]">
-                <button class="md:hidden shrink-0" ><img src="assets/img/header_menu.svg" alt=""></button>
-                <img src="assets/img/logo.svg" alt="" class="w-fit h-[32px] md:h-auto">
-                <div class="flex gap-12">
-                    <button class="flex gap-5 py-2 pl-6 pr-11 bg-[#A10B0B] items-center rounded-[100px] text-white">
-                        <img src="assets/img/btn_menu.svg" alt="" class="hidden md:block">Каталог</button>
-                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px] shrink-0">
-                        <input type="search" placeholder="Поиск" class="grow outline-none "><img
-                            src="assets/img/search.svg" alt=""></div>
+        <div class="container flex gap-2 lg:gap-12 flex-col-reverse lg:flex-row ">
+            <div class="flex md:flex-col flex-1 grow-[1.15]">               
+                <img src="assets/img/logo.svg" alt="" class="w-fit h-auto hidden lg:flex">
+                <div class="flex gap-[10px] lg:gap-12 w-full lg:w-auto">
+                    <button class="flex gap-5 py-2 px-4 lg:pl-6 lg:pr-11 text-xs lg:text-base bg-[#A10B0B] items-center rounded-[100px] text-white">
+                        <img src="assets/img/btn_menu.svg" alt="" class="hidden md:block">
+                        Каталог
+                    </button>
+                    <label class="flex pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px] shrink-0 cursor-pointer">
+                        <input type="search" placeholder="Поиск" class="grow outline-none text-xs leading-[14px]">
+                        <img src="assets/img/search.svg" alt="">
+                    </label>
                 </div>
             </div>
             <div class="flex flex-col flex-1">
@@ -57,7 +59,9 @@
                         <a href="#" class="leading-[140%] text-lg font-bold text-black">Акции</a>
                         <a href="#" class="leading-[140%] text-lg font-bold text-black">Хвастушки</a>
                     </nav>
-                    <div class="flex gap items-end gap-5">
+                    <div class="flex gap items-center lg:items-end w-full lg:w-auto gap-4 lg:gap-5">
+                        <button class="md:hidden shrink-0" ><img src="assets/img/header_menu.svg" alt=""></button>
+                        <img src="assets/img/logo.svg" alt="" class="w-fit h-[32px] mr-auto lg:mr-0 lg:hidden">
                         <div class="hidden lg:flex flex-col items-center gap-2">
                             <div class="relative">
                                 <img src="assets/img/heart.svg" alt="">
@@ -71,7 +75,7 @@
                             <img src="assets/img/user.svg" alt="">
                             <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F] hidden lg:flex">Личный кабинет</a>
                         </div>
-                        <div class="flex flex-col items-center gap-2">
+                        <div class="flex flex-col items-center gap-2 mr-2">
                             <div class="relative">
                                 <img src="assets/img/shopping-cart.svg" alt="">
                                 <div
@@ -98,8 +102,8 @@
                                 <p class="text-white font-medium leading-[23px] md:leading-[42px] text-[20px] md:text-4xl mt-3 md:mt-0 z-10 relative">Закупаемся подарками</p>
                                 <p class="text-white font-medium leading-[38px]  md:leading-[75px] text-[32px] md:text-[64px] mb-4 md:mb-7">СКИДКИ НА ВСЁ</p>
                                 <a href="#"
-                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
-                                <p class="leading-[16px] text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
+                                    class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full max-w-[122px] md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black">Подробнее</a>
+                                <p class="leading-[12px] md:leading-[16px] text-[10px] md:text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
                             </div>
                             <div
                                 class="absolute md:relative top-[36px] right-[31px] flex items-center justify-center aspect-square px-4 py-4 md:px-6 md:py-6 md:mt-[119px] z-[0] md:ml-[94px] bg-[#D90000] md:z-10 rounded-full">
@@ -115,8 +119,8 @@
                                 <p class="text-white font-medium leading-[23px] md:leading-[42px] text-[20px] md:text-4xl mt-3 md:mt-0 z-10 relative">Закупаемся подарками</p>
                                 <p class="text-white font-medium leading-[38px]  md:leading-[75px] text-[32px] md:text-[64px] mb-4 md:mb-7">СКИДКИ НА ВСЁ</p>
                                 <a href="#"
-                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
-                                <p class="leading-[16px] text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
+                                class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full max-w-[122px] md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black">Подробнее</a>
+                                <p class="leading-[12px] md:leading-[16px] text-[10px] md:text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
                             </div>
                             <div
                                 class="absolute md:relative top-[36px] right-[31px] flex items-center justify-center aspect-square px-4 py-4 md:px-6 md:py-6 md:mt-[119px] z-[0] md:ml-[94px] bg-[#D90000] md:z-10 rounded-full">
@@ -132,8 +136,8 @@
                                 <p class="text-white font-medium leading-[23px] md:leading-[42px] text-[20px] md:text-4xl mt-3 md:mt-0 z-10 relative">Закупаемся подарками</p>
                                 <p class="text-white font-medium leading-[38px]  md:leading-[75px] text-[32px] md:text-[64px] mb-4 md:mb-7">СКИДКИ НА ВСЁ</p>
                                 <a href="#"
-                                    class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
-                                <p class="leading-[16px] text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
+                                class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full max-w-[122px] md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black">Подробнее</a>
+                                <p class="leading-[12px] md:leading-[16px] text-[10px] md:text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
                             </div>
                             <div
                                 class="absolute md:relative top-[36px] right-[31px] flex items-center justify-center aspect-square px-4 py-4 md:px-6 md:py-6 md:mt-[119px] z-[0] md:ml-[94px] bg-[#D90000] md:z-10 rounded-full">
@@ -149,7 +153,7 @@
                                 <p class="text-white font-medium leading-[38px]  md:leading-[75px] text-[32px] md:text-[64px] mb-4 md:mb-7">СКИДКИ НА ВСЁ</p>
                                 <a href="#"
                                     class="bg-[#FFD25F] -[140%] px-[10px] py-[9px] mb-4 md:mb-11 rounded-full w-[133px] flex justify-center text-sm text-black">Подробнее</a>
-                                <p class="leading-[16px] text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
+                                <p class="leading-[12px] md:leading-[16px] text-[10px] md:text-sm mb-3 md:mb-0">*На время акции накопительная скидка и промокоды отключены.</p>
                             </div>
                             <div
                                 class="absolute md:relative top-[36px] right-[31px] flex items-center justify-center aspect-square px-4 py-4 md:px-6 md:py-6 md:mt-[119px] z-[0] md:ml-[94px] bg-[#D90000] md:z-10 rounded-full">

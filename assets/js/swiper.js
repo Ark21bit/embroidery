@@ -19,7 +19,7 @@ const swiperMain = new Swiper('.swiperMain', {
 const swiperSecond = new Swiper('.swiperSecond', {
     // Optional parameters 
     spaceBetween:20,
-    slidesPerView:5,
+    slidesPerView:2,
     // If we need pagination   
   
     // Navigation arrows
@@ -27,13 +27,24 @@ const swiperSecond = new Swiper('.swiperSecond', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }, 
+    breakpoints:{
+      576:{
+        slidesPerView:3,
+      },
+      960:{
+        slidesPerView:4,
+      },      
+      1280:{
+        slidesPerView:5,
+      }
+    }
     
   });
 
 const swiperPrimary = new Swiper('.swiperPrimary', {
     // Optional parameters 
     spaceBetween:20,
-    slidesPerView:4,
+    slidesPerView:2,
     // If we need pagination   
   
     // Navigation arrows
@@ -41,5 +52,13 @@ const swiperPrimary = new Swiper('.swiperPrimary', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }, 
+    breakpoints:{      
+      960:{
+        slidesPerView:3,
+      },      
+      1280:{
+        slidesPerView:4,
+      }
+    }
     
   });

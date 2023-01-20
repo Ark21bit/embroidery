@@ -35,7 +35,7 @@
                 <div class="flex gap-12">
                     <button class="flex gap-5 py-2 pl-6 pr-11 bg-[#A10B0B] items-center rounded-[100px] text-white"><img
                             src="assets/img/btn_menu.svg" alt="">Каталог</button>
-                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px] ">
+                    <div class="flex gap-2 pl-5 pr-1 py-1 grow border-[#BDBDBD] border-[1px] shrink-0">
                         <input type="search" placeholder="Поиск" class="grow outline-none"><img
                             src="assets/img/search.svg" alt=""></div>
                 </div>
@@ -92,7 +92,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0 z-[-1]">
                         <div class="flex items-start">
                             <div class="text-white mt-[119px] ml-[159px]">
                                 <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
@@ -110,7 +110,7 @@
                     </div>
 
                     <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0 z-[-1]">
                         <div class="flex items-start">
                             <div class="text-white mt-[119px] ml-[159px]">
                                 <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="swiper-slide bg-[url('assets/img/slider_bg.png')] relative">
-                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0">
+                        <img src="assets/img/slider_img.png" alt="" class="absolute top-0 right-0 z-[-1]">
                         <div class="flex items-start">
                             <div class="text-white mt-[119px] ml-[159px]">
                                 <p class="text-white font-medium leading-[42px] text-4xl">Закупаемся подарками</p>
@@ -760,7 +760,7 @@
         </div>
 
         <div class="">
-            <h2 class="font-bold text-[28px] leading-none mb-9">Новинки <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
+            <h2 class="font-bold text-[28px] leading-none mb-9">Распродажа <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
             <div class="swiper swiperPrimary h-[auto] w-full pb-[50px]">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -953,14 +953,72 @@
             </div>
         </div>
 
-        <div class="mb-12">
+        <div class="mb-[102px] mt-[50px]">
             <h2 class="font-semibold text-[28px] leading-none mb-7">Заголовок SEO текст</h2>
             <p class="text-sm leading-[1.4] text-[#4F4F4F] mb-3">Интернет-магазин «Мир Вышивки» предлагает большой выбор товаров для рукоделия. На сайте можно купить готовые наборы для вышивания и творчества, расходные материалы и инструменты от ведущих торговых марок. В частности, мы сотрудничаем с брендами «Золотое Руно», Риолис (Сотвори Сама), Dimensions, Panna, Овен, «Чудесная игла» и др.</p>
             <p class="text-sm leading-[1.4] text-[#4F4F4F] mb-3">Отдельного внимания заслуживают подарочные электронные сертификаты на товары для шитья и рукоделия. Для полной или частичной оплаты покупок достаточно ввести индивидуальный код, который высылается на почту заказчику.</p>
             <p class="text-sm leading-[1.4] text-[#4F4F4F]">Наборы для вышивания могут быть доставлены в любую точку Москвы, СПб и Нижнего Новгорода. Помимо этого, интернет-магазин осуществляет пересылку товаров в другие города России.</p>
         </div>
+        <div class="grid-full Prose bg-[#F7F8F9] pt-12 pb-4">
+            <div class="flex">                    
+                <form action="#" class="grid gap-x-[14px] gap-y-3 items-center">  
+                    <p class="text-[16px] leading-[19px] font-bold text-[#4F4F4F] grid mr-16">Хочу быть в курсе акций и новинок </p>            
+                    <input type="email" placeholder="Ваш email" class="px-5 py-2.5 col-start-2 border-[#BDBDBD] border-[1px] outline-none  w-[535px]">
+                    <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] col-start-3 items-center leading-[140%] shrink-0 px-[10px] py-[9px] rounded-full w-[133px] flex justify-center text-sm text-black">Подписаться</button>
+                    <label class="flex items-center text-xs gap-[10px] col-start-2 text-[#4F4F4F]"><input type="checkbox" >Я соглашаюсь на обработку <a href="#" class="underline"> персональных данных.</a></label>
+                </form>            
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="Prose pt-10 pb-11 text-[#4F4F4F]">       
+        <div class=" flex gap-4">
+            <div class=" flex-1">
+                <p class=" text-[16px] leading-[19px] font-medium mb-5 text-black">Мы принимаем к оплате</p>
+                <div class="flex  gap-5">
+                    <img src="assets/img/mastercard.svg" alt="">
+                    <img src="assets/img/mir.svg" alt="">
+                    <img src="assets/img/visa.svg" alt="">
+                </div>
+            </div>
+            
+            <ul class="flex flex-col gap-5 text-sm leading-[1.4] flex-1">
+                <a href="#">Акции</a>    
+                <a href="#">Багетные мастерские</a>    
+                <a href="#">Новости</a>    
+                <a href="#">Контакты</a>    
+                <a href="#">Калькулятор канвы</a>   
+            </ul>
+
+            <ul class="flex flex-col gap-5 text-sm leading-[1.4] flex-1">
+                <a href="#">Оферта</a>    
+                <a href="#">Обмен и возврат</a>    
+                <a href="#">Служба заботы о клиентах</a>    
+                <a href="#">Партнерская программа</a>    
+                <a href="#">Система скидок</a>    
+                
+            </ul>
+
+            <ul class="flex flex-col gap-5 text-sm leading-[1.4] flex-1">
+                <a href="#">Оплата</a>    
+                <a href="#">Доставка</a>    
+                <a href="#">Блог</a>    
+                <a href="#">О компании</a>    
+                
+            </ul>
+        </div>    
+        <div class="w-full bg-[#EBEBEB] h-[1px] mt-6"></div>  
+        <div class="flex pt-10">
+            <p class="text-xs leading-[1.4] flex-1 flex-grow-[2] ml-5">© 2022. «Мир Вышивки»</p>
+            <p class="text-xs leading-[1.4] flex-1">Политика конфиденциальности</p>            
+            <div class="flex gap-3 flex-1">
+                <img src="assets/img/vk.svg" alt="">
+                <img src="assets/img/ok.svg" alt="">
+                <img src="assets/img/pinterest.svg" alt="">
+                <img src="assets/img/youtube.svg" alt="">
+            </div>
+        </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
 </body>

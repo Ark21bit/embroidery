@@ -3,11 +3,13 @@ $('body').on('click', '.minus-pcs, .plus-pcs', function(){
     var $input = $row.find('.number-pcs');
     var step = $row.data('step');
     var val = parseFloat($input.val());
+    
     if ($(this).hasClass('minus-pcs')) {
-        val -= step;
+        val -= 1;
     } else {
-        val += step;
+        val += 1;
     }
+   
     $input.val(val);
     $input.change();
     return false;

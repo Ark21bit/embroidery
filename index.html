@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header class="pt-3 pb-5 mb-5">
+    <header class="pt-3 pb-5 md:mb-5">
         <div class="container flex gap-2 lg:gap-12 flex-col-reverse lg:flex-row ">
             <div class="flex md:flex-col flex-1 grow-[1.15]">               
                 <img src="assets/img/logo.svg" alt="" class="w-fit h-auto hidden lg:flex">
@@ -54,10 +54,10 @@
                 </div>
                 <div class=" flex gap-5 justify-between items-center h-2/6">
                     <nav class="lg:flex gap-5 items-center hidden">
-                        <a href="#" class="leading-[140%] text-lg font-bold text-black">Бренды</a>
-                        <a href="#" class="leading-[140%] text-lg font-bold text-black">Сюжеты</a>
-                        <a href="#" class="leading-[140%] text-lg font-bold text-black">Акции</a>
-                        <a href="#" class="leading-[140%] text-lg font-bold text-black">Хвастушки</a>
+                        <a href="#" class="leading-[140%] text-base xl:text-lg font-bold text-black">Бренды</a>
+                        <a href="#" class="leading-[140%] text-base xl:text-lg font-bold text-black">Сюжеты</a>
+                        <a href="#" class="leading-[140%] text-base xl:text-lg font-bold text-black">Акции</a>
+                        <a href="#" class="leading-[140%] text-base xl:text-lg font-bold text-black">Хвастушки</a>
                     </nav>
                     <div class="flex gap items-center lg:items-end w-full lg:w-auto gap-4 lg:gap-5">
                         <button class="md:hidden shrink-0" ><img src="assets/img/header_menu.svg" alt=""></button>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="flex flex-col items-center gap-2">
                             <img src="assets/img/user.svg" alt="">
-                            <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F] hidden lg:flex">Личный кабинет</a>
+                            <a href="#" class="leading-[140%] text-xs font-medium text-[#3E403F] hidden lg:flex w-max">Личный кабинет</a>
                         </div>
                         <div class="flex flex-col items-center gap-2 mr-2">
                             <div class="relative">
@@ -90,7 +90,7 @@
         </div>
     </header>
     <main class="Prose">
-        <div class="grid-full Prose mb-12 bg-[url('assets/img/image1.png')] bg-no-repeat bg-[center_top_-52px]">
+        <div class="grid-full Prose mb-4 md:mb-12 bg-[url('assets/img/image1.png')] bg-no-repeat bg-[center_top_-52px]">
             <div class="swiper swiperMain h-fit md:h-[400px] container w-full ">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -173,34 +173,34 @@
         </div>
 
         <div class="">
-            <h2 class="font-bold text-[28px] leading-none mb-9">Лидеры продаж <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
-            <div class="swiper swiperPrimary h-[auto] w-full pb-20">
+            <h2 class="font-bold text-xl md:text-[28px] leading-none mb-4 md:mb-9">Лидеры продаж <a href="#" class=" text-xs md:text-base leading-none md:leading-[19px] text-[#A10B0B] ml-5 md:ml-7">Смотреть все</a></h2>
+            <div class="swiper swiperPrimary h-[auto] w-full mb-4 md:pb-14">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                            
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg1.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg1.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>                                   
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>                                   
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -217,35 +217,35 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
                     </div>
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px] ">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg2.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg2.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -262,7 +262,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -270,28 +270,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                             
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg3.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg3.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -307,7 +307,7 @@
                                     </tr>
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
-                                     <button class="border-[1px] hover:bg-[#BDBDBD] border-[#BDBDBD] leading-[140%] px-[10px] py-[9px] rounded-full w-full flex justify-center text-sm text-black">Сообщить о поступлении</button>
+                                    <button class="border-[1px] hover:bg-[#BDBDBD] h-[30px] md:h-auto border-[#BDBDBD] leading-[92.5%] md:leading-[140%] px-[10px] py-[5px] md:py-[9px] rounded-full w-full flex items-center justify-center text-[11px] md:text-sm text-black">Сообщить о поступлении</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -315,28 +315,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg4.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg4.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -353,7 +353,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -367,34 +367,34 @@
         </div>
 
         <div class="">
-            <h2 class="font-bold text-[28px] leading-none mb-9">Новинки <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
-            <div class="swiper swiperPrimary h-[auto] w-full pb-[50px]">
+            <h2 class="font-bold text-xl md:text-[28px] leading-none mb-4 md:mb-9">Новинки <a href="#" class=" text-xs md:text-base leading-none md:leading-[19px] text-[#A10B0B] ml-5 md:ml-7">Смотреть все</a></h2>
+            <div class="swiper swiperPrimary h-[auto] w-full mb-4 md:mb-2 md:pb-[50px]">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                            
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg1.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg1.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>                                   
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>                                   
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -411,35 +411,35 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
                     </div>
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px] ">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg2.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg2.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -456,7 +456,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -464,28 +464,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                             
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg3.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg3.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -501,7 +501,7 @@
                                     </tr>
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
-                                     <button class="border-[1px] hover:bg-[#BDBDBD] border-[#BDBDBD] leading-[140%] px-[10px] py-[9px] rounded-full w-full flex justify-center text-sm text-black">Сообщить о поступлении</button>
+                                    <button class="border-[1px] hover:bg-[#BDBDBD] h-[30px] md:h-auto border-[#BDBDBD] leading-[92.5%] md:leading-[140%] px-[10px] py-[5px] md:py-[9px] rounded-full w-full flex items-center justify-center text-[11px] md:text-sm text-black">Сообщить о поступлении</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -509,28 +509,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg4.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg4.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -547,7 +547,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -560,51 +560,51 @@
             </div>
         </div>
 
-        <div class="mb-12">
-            <h2 class="font-bold text-[28px] leading-none mb-7">Популярные категории </h2>
+        <div class="mb-6 md:mb-12">
+            <h2 class="font-bold text-xl md:text-[28px] leading-none mb-4 md:mb-7">Популярные категории </h2>
             <div class="swiper swiperSecond h-[80px] md:h-[150px] w-full">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Наборы <br> для вышивания</p>
+                        <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Наборы <br> для вышивания</p>
                         <img src="assets/img/image_category1.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Алмазная <br> вышивка</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Алмазная <br> вышивка</p>
                         <img src="assets/img/image_category4.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Товары <br> для творчества</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Товары <br> для творчества</p>
                         <img src="assets/img/image_category2.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Изготовление <br> бижутерии</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Изготовление <br> бижутерии</p>
                         <img src="assets/img/image_category5.png" alt=""
                             class="absolute top-[50%] translate-y-[-50%]  right-0 z-[-1] ">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Электронные <br> схемы</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Электронные <br> схемы</p>
                         <img src="assets/img/image_category3.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Электронные <br> схемы</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Электронные <br> схемы</p>
                         <img src="assets/img/image_category3.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
                     <div
                         class="swiper-slide bg-[#F7F8F9] rounded-[20px] overflow-hidden relative cursor-pointer hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.1)]">
-                        <p class="font-bold text-[18px] leading-[140%] mt-5 ml-6">Электронные <br> схемы</p>
+                         <p class="font-bold text-sm md:text-[18px] leading-[120%] md:leading-[140%] mt-2 md:mt-5 ml-4 md:ml-6">Электронные <br> схемы</p>
                         <img src="assets/img/image_category3.png" alt=""
                             class="absolute top-[50%] object-contain max-h-full translate-y-[-50%] right-0 z-[-1]">
                     </div>
@@ -615,196 +615,204 @@
             </div>
         </div>        
 
-        <div class="mb-12">
-            <h2 class="font-bold text-[28px] leading-none mb-9">Хвастушки <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
+        <div class="mb-6 md:mb-12">
+            <h2 class="font-bold text-xl md:text-[28px] leading-none mb-4 md:mb-9">Хвастушки <a href="#" class=" text-xs md:text-base leading-none md:leading-[19px] text-[#A10B0B] ml-5 md:ml-7">Смотреть все</a></h2>
             <div class="flex gap-5">
-                <div class="relative flex-[1.023] hidden md:flex flex-col overflow-hidden pl-20 pt-10 pb-8 pr-[73px] rounded-[30px] justify-between bg-[url('assets/img/postImg2.png')] bg-no-repeat bg-cover">
+                <div class="relative flex-[1.023] hidden lg:flex flex-col overflow-hidden pl-20 pt-10 pb-8 pr-[73px] rounded-[30px] justify-between bg-[url('assets/img/postImg2.png')] bg-no-repeat bg-cover">
                     <div class="flex flex-col" >
                         <p class="text-bold text-2xl text-white leading-none mb-4">Работа недели</p>
                         <div class="flex items-center">
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>                        
                     </div>
                     <div class="flex gap-2 ml-auto items-end">
                         <p class="text-sm text-white mr-8 leading-[1.4]">Абрис Арт "Стихия Земли". Покупала в здесь. Начинала вышивать капроном 50ткой - не понравилось, а тоньше капрона еще у меня не было, так что продолжила леской. Сняла работу с пялец, а она вся растянутая по центру, перекошена в целом. </p>
                         <div class="flex shrink-0">
                             <img src="assets/img/heartWhite.svg" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                            <p class="font-medium text-[10] m1:text-xs leading-[1.4] ml-1 text-white">12</p>
                         </div>
                         <div class="flex shrink-0">
                             <img src="assets/img/message.svg" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                            <p class="font-medium text-[10] m1:text-xs leading-[1.4] ml-1 text-white">9</p>
                         </div>
                     </div>
                     <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-post"></div>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 flex-1">
-                    <div class="flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
+                    <div class="overflow-hidden  relative flex flex-col  aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="hidden md:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[30px] bg-cover p-4 justify-between">
+                    <div class="overflow-hidden hidden relative lg:flex flex-col aspect-square bg-[url('assets/img/postImg.png')] bg-no-repeat rounded-[10px] md:rounded-[30px] bg-cover p-2 md:p-4 justify-between">
                         <div class="flex items-center" >
                             <img src="assets/img/userImg.png" alt="">
-                            <p class="font-medium text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
+                            <p class="font-medium text-[10px] md:text-xs leading-[1.4] ml-2 text-white" >jasin_alex</p>
                         </div>
                         <div class="flex items-center gap-2 ml-auto">
                             <div class="flex">
                                 <img src="assets/img/heartWhite.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">12</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">12</p>
                             </div>
                             <div class="flex">
                                 <img src="assets/img/message.svg" alt="">
-                                <p class="font-medium text-xs leading-[1.4] ml-1 text-white">9</p>
+                                <p class="font-medium text-[11px] md:text-xs leading-[1.4] ml-1 text-white">9</p>
                             </div>
                         </div>
+                        <div class="absolute top-0 left-0 h-full z-[-1] w-full gradient-small_post"></div>
                     </div>
-                    <div class="flex flex-col aspect-square bg-[#F5F5F rounded-[30px] p-4 justify-around items-center">
+                    <div class="flex flex-col aspect-square bg-[#F5F5F rounded-[30px] p-2 md:p-4 justify-around items-center">
                         <img src="assets/img/logo.svg" alt="">
-                        <button   class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] flex justify-center text-sm text-black">Похвастаться</button>
+                        <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Похвастаться</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="">
-            <h2 class="font-bold text-[28px] leading-none mb-9">Распродажа <a href="#" class="text-[16px] leading-[19px] text-[#A10B0B] ml-7">Смотреть все</a></h2>
-            <div class="swiper swiperPrimary h-[auto] w-full pb-[50px]">
+            <h2 class="font-bold text-xl md:text-[28px] leading-none mb-4 md:mb-9">Распродажа <a href="#" class=" text-xs md:text-base leading-none md:leading-[19px] text-[#A10B0B] ml-5 md:ml-7">Смотреть все</a></h2>
+            <div class="swiper swiperPrimary h-[auto] w-full pb-[20px] md:pb-[50px]">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                            
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg1.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg1.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>                                   
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>                                   
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -821,35 +829,40 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                      <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] hidden leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
+                                    <div class="counter-pcs flex items-center justify-between  gap-1 md:max-w-[133px] w-full px-4 py-[6px] md:py-2.5 rounded-full border-[#BDBDBD] border-[1px]">
+                                        <button class="minus-pcs"><img src="assets/img/minus.svg" alt=""></button>
+                                        <input type="text" class="number-pcs max-w-[40px] text-xs md:text-sm" >
+                                        <button class="plus-pcs"><img src="assets/img/plus.svg" alt=""></button>
+                                    </div>
                                 </div>                               
                             </div>
                         </div>                        
                     </div>
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px] ">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg2.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg2.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -866,35 +879,35 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                   <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
                     </div>
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px] ">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg2.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg2.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5009 Грузовик с Лабрадорами (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -911,7 +924,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                   <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -919,28 +932,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033C18.3307 10.8033 18.3307 10.8032 18.3307 10.8033L10.964 18.7513C10.6386 19.1025 10.111 19.1025 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C10.6688 2.53685 10.6687 2.53695 10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934ZM14.4998 2.62242C14.0072 2.62242 13.5194 2.72714 13.0643 2.93058C12.6092 3.13403 12.1957 3.43222 11.8475 3.80813L10.964 4.76132C10.6386 5.11244 10.111 5.11244 9.78552 4.76132L8.90219 3.80827C8.19872 3.04929 7.24462 2.6229 6.24977 2.6229C5.25493 2.6229 4.30083 3.04929 3.59736 3.80827C2.8939 4.56726 2.4987 5.59665 2.4987 6.67002C2.4987 7.74338 2.8939 8.77278 3.59736 9.53176L10.3748 16.8441L17.1522 9.53176C17.5006 9.15603 17.7771 8.70978 17.9657 8.21877C18.1542 7.72777 18.2513 7.2015 18.2513 6.67002C18.2513 6.13854 18.1542 5.61226 17.9657 5.12126C17.7771 4.63026 17.5007 4.18415 17.1523 3.80842C16.8041 3.43252 16.3903 3.13403 15.9352 2.93058C15.4802 2.72714 14.9924 2.62242 14.4998 2.62242Z" fill="#BDBDBD"/>
                                     </svg>                             
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg3.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg3.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -956,7 +969,7 @@
                                     </tr>
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
-                                     <button class="border-[1px] hover:bg-[#BDBDBD] border-[#BDBDBD] leading-[140%] px-[10px] py-[9px] rounded-full w-full flex justify-center text-sm text-black">Сообщить о поступлении</button>
+                                     <button class="border-[1px] hover:bg-[#BDBDBD] h-[30px] md:h-auto border-[#BDBDBD] leading-[92.5%] md:leading-[140%] px-[10px] py-[5px] md:py-[9px] rounded-full w-full flex items-center justify-center text-[11px] md:text-sm text-black">Сообщить о поступлении</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -964,28 +977,28 @@
 
                     <div class="swiper-slide  group  bg-white rounded-[20px] relative cursor-pointer h-auto ">
                         <div class="card-shadow absolute top-[36px] group-hover:visible invisible left-0 w-full h-full z-[-1]"></div>
-                        <div class="flex flex-col gap-5 bg-white h-full rounded-[20px]">
-                            <div class="flex flex-col bg-[#FAFAFA] px-6 pb-4 pt-3 rounded-t-[20px]">
-                                <div class="flex gap-1 justify-between mb-3 px-3">
-                                    <div class="flex gap-1">
-                                        <div class="bg-[#A10B0B] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Хит</div>
-                                        <div class="bg-[#FFD25F] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">Новинка</div>
-                                        <div class="bg-[#FF0000] rounded-full text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-2">30%</div>
+                        <div class="flex flex-col gap-2 md:gap-5 bg-white h-full rounded-[20px]">
+                            <div class="flex flex-col bg-[#FAFAFA] px-2.5 md:px-6 md:mb-0 md:pb-4 pt-2 md:pt-3 rounded-t-[20px] ">
+                                <div class="flex gap-1 justify-between mb-2 md:mb-3 md:px-3">
+                                    <div class="flex gap-1 items-center">
+                                        <div class="bg-[#A10B0B] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem] ">Хит</div>
+                                        <div class="bg-[#FFD25F] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">Новинка</div>
+                                        <div class="bg-[#FF0000] flex items-center rounded-full text-[8px] md:text-[11px] leading-[1.4] text-bold text-white py-[2px] w-fit  px-[.35rem]">30%</div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[11px] md:w-auto">
                                         <path fill="#A10B0B"  fill-rule="evenodd" clip-rule="evenodd" d="M12.4263 1.26934C13.0837 0.975473 13.7882 0.824219 14.4998 0.824219C15.2113 0.824219 15.9159 0.975473 16.5732 1.26934C17.2305 1.56316 17.8276 1.99377 18.3306 2.5366C18.8337 3.07926 19.2331 3.72383 19.5054 4.43292C19.7778 5.14214 19.918 5.90232 19.918 6.67002C19.918 7.43771 19.7778 8.19789 19.5054 8.90711C19.2331 9.61627 18.8339 10.2606 18.3307 10.8033L10.964 18.7513C10.6386 19.1024 10.111 19.1024 9.78552 18.7513L2.41885 10.8033C1.40283 9.70707 0.832031 8.22029 0.832031 6.67002C0.832031 5.11974 1.40283 3.63296 2.41885 2.53675C3.43488 1.44054 4.8129 0.8247 6.24977 0.8247C7.68665 0.8247 9.06467 1.44054 10.0807 2.53675L10.3748 2.85404L10.6687 2.5369C11.1717 1.994 11.769 1.56318 12.4263 1.26934Z" />
                                     </svg>                               
                                 </div>
-                                <div class="aspect-[6/5] overflow-hidden flex items-center justify-center">
-                                    <img class="object-contain aspect-[6/5]" src="assets/img/cartImg4.png" alt="">
+                                <div class="aspect-square md:aspect-[6/5] overflow-hidden mb-2 md:mb-0 flex items-center justify-center">
+                                    <img class="object-contain aspect-square md:aspect-[6/5] w-full" src="assets/img/cartImg4.png" alt="">
                                 </div>
                             </div> 
-                            <div class="p-6 px-9 pt-0 flex flex-col gap-[10px] grow-[1]"> 
+                            <div class="pb-4 md:p-6 px-2.5 md:px-9 md:pt-0 pt-0 flex flex-col gap-[10px] grow-[1]"> 
                                 <div class="flex gap-2 items-start ">
-                                    <p class="text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] font-medium"> ₽</span></p>
-                                    <p class="text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
+                                    <p class="text-sm md:text-[20px] font-bold leading-none text-[#282828]">2 342<span class="text-[10px] leading-none font-medium"> ₽</span></p>
+                                    <p class="text-[.5rem] md:text-xs line-through leading-none text-[#ADADAD]">3 232 ₽</p>
                                 </div>
-                                <p class="text-sm leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
+                                <p class="text-xs md:text-sm leading-[14px] md:leading-[1.4] font-medium max-w-[240px] ">BU5008 Лавандовое поле (Luca-S)</p>
                                 <table class="table-auto border-[2px] border-white border-solid border-collapse text-[10px] hidden md:table  leading-[12px] text-[#4F4F4F]">
                                     <tr class="border-b-[1px] border-[#EBEBEB] pt-[2px] pb-[6px]">
                                         <td class="w-3/6">Размер </td>                                    
@@ -1002,7 +1015,7 @@
                                 </table> 
                                 <div class="flex gap-[6px] mt-auto">                                   
                                     <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full w-[133px] hidden md:flex  justify-center text-sm text-black">В один клик</button>
-                                     <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px]  rounded-full w-[133px] flex justify-center text-sm text-black">Купить</button>
+                                    <button class="bg-[#FFD25F] leading-[140%] px-[10px] py-[9px] rounded-full md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black w-full font-medium md:font-normal">Купить</button>
                                 </div>                               
                             </div>
                         </div>                        
@@ -1015,28 +1028,29 @@
             </div>
         </div>
 
-        <div class="mb-[102px] mt-[50px]">
-            <h2 class="font-semibold text-[28px] leading-none mb-7">Заголовок SEO текст</h2>
-            <p class="text-sm leading-[1.4] text-[#4F4F4F] mb-3">Интернет-магазин «Мир Вышивки» предлагает большой выбор товаров для рукоделия. На сайте можно купить готовые наборы для вышивания и творчества, расходные материалы и инструменты от ведущих торговых марок. В частности, мы сотрудничаем с брендами «Золотое Руно», Риолис (Сотвори Сама), Dimensions, Panna, Овен, «Чудесная игла» и др.</p>
-            <p class="text-sm leading-[1.4] text-[#4F4F4F] mb-3">Отдельного внимания заслуживают подарочные электронные сертификаты на товары для шитья и рукоделия. Для полной или частичной оплаты покупок достаточно ввести индивидуальный код, который высылается на почту заказчику.</p>
-            <p class="text-sm leading-[1.4] text-[#4F4F4F]">Наборы для вышивания могут быть доставлены в любую точку Москвы, СПб и Нижнего Новгорода. Помимо этого, интернет-магазин осуществляет пересылку товаров в другие города России.</p>
+        <div class="mb-[38px] md:mb-[102px] mt-0 md:mt-[50px]">
+            <h2 class="font-semibold text-xl md:text-[28px] leading-none mb-4 md:mb-7">Заголовок SEO текст</h2>           
+            <p class="text-xs md:text-sm leading-[1.4] text-[#4F4F4F] mb-3">Интернет-магазин «Мир Вышивки» предлагает большой выбор товаров для рукоделия. На сайте можно купить готовые наборы для вышивания и творчества, расходные материалы и инструменты от ведущих торговых марок. В частности, мы сотрудничаем с брендами «Золотое Руно», Риолис (Сотвори Сама), Dimensions, Panna, Овен, «Чудесная игла» и др.</p>
+            <p class="text-xs md:text-sm leading-[1.4] text-[#4F4F4F] mb-3">Отдельного внимания заслуживают подарочные электронные сертификаты на товары для шитья и рукоделия. Для полной или частичной оплаты покупок достаточно ввести индивидуальный код, который высылается на почту заказчику.</p>
+            <p class="text-xs md:text-sm leading-[1.4] text-[#4F4F4F]">Наборы для вышивания могут быть доставлены в любую точку Москвы, СПб и Нижнего Новгорода. Помимо этого, интернет-магазин осуществляет пересылку товаров в другие города России.</p>
         </div>
 
-        <div class="grid-full Prose bg-[#F7F8F9] pt-12 pb-4 px-5">
+        <div class="grid-full Prose bg-[#F7F8F9] pt-3.5 md:pt-12 pb-4 px-5">
             <div class="flex">                    
                 <form action="#" class="grid gap-x-[14px] gap-y-3 items-center w-full md:w-auto">  
-                    <p class="text-[16px] leading-[19px] font-bold text-[#4F4F4F] grid mr-16">Хочу быть в курсе акций и новинок </p>            
-                    <input type="email" placeholder="Ваш email" class="px-5 py-2.5 md:col-start-2 border-[#BDBDBD] border-[1px] outline-none w-full  md:w-[535px]">
-                    <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] md:col-start-3 items-center leading-[140%] order-last md:order-none shrink-0 px-[10px] py-[9px] rounded-full w-[133px] flex justify-center text-sm text-black">Подписаться</button>
-                    <label class="flex items-center text-xs gap-[10px] md:col-start-2 text-[#4F4F4F]"><input type="checkbox" >Я соглашаюсь на обработку <a href="#" class="underline"> персональных данных.</a></label>
+                    <p class="text-sm md:text-base leading-[16px] md:leading-[19px] font-bold text-[#4F4F4F] grid md:mr-16">Хочу быть в курсе акций и новинок </p>            
+                    <input type="email" placeholder="Ваш email" class="px-3 md:px-5 py-2.5 md:col-start-2 border-[#BDBDBD] text-xs md:text-base border-[1px] outline-none w-full  md:w-[535px]">
+                    <button class="border-[1px] hover:bg-[#FFD25F] border-[#FFD25F] md:col-start-3 items-center leading-[140%] order-last md:order-none shrink-0 px-[10px] py-[7px] md:py-[9px] rounded-full max-w-[122px] md:max-w-[133px] flex justify-center text-[11px] md:text-sm text-black">Подписаться</button>
+
+                    <label class="flex gap-[10px] items-start text-[10px] md:text-xs md:col-start-2 text-[#4F4F4F]"><input type="checkbox"><div> Я соглашаюсь на обработку <a href="#" class="underline"> персональных данных.</a></div></label>
                 </form>            
             </div>
         </div>
     </main>
-    <footer class="Prose pt-10 pb-11 text-[#4F4F4F] text-xs md:text-sm leading-[1.4] ">       
+    <footer class="Prose pt-4 md:pt-10  pb-7 md:pb-11 text-[#4F4F4F] text-xs md:text-sm leading-[1.4] ">       
         <div class=" flex gap-4 flex-wrap px-5 md:px-0">
             <div class=" w-full md:w-3/12">
-                <p class=" text-sm md:text-base leading-[16px] md:leading-[19px] font-medium mb-5 text-black">Мы принимаем к оплате</p>
+                <p class=" text-sm md:text-base leading-[16px] md:leading-[19px] font-medium mb-2 md:mb-5 text-black">Мы принимаем к оплате</p>
                 <div class="flex  gap-5">
                     <img src="assets/img/mastercard.svg" alt="">
                     <img src="assets/img/mir.svg" alt="">
@@ -1070,7 +1084,7 @@
             </ul>
         </div>    
         <div class="w-full bg-[#EBEBEB] h-[1px] mt-6 grid-full"></div>  
-        <div class="flex pt-10 flex-col md:flex-row gap-2  md:items-center px-5 md:px-0">
+        <div class="flex pt-4 md:pt-10 flex-col md:flex-row gap-2  md:items-center px-5 md:px-0">
             <p class="flex-1 flex-grow-[2]">© 2022. «Мир Вышивки»</p>
             <p class="flex-1 md:ml-5">Политика конфиденциальности</p>            
             <div class="flex gap-3 flex-1 mt-5 md:mt-0 justify-between md:justify-start">
@@ -1082,8 +1096,10 @@
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/counter.js"></script>
 </body>
 
 </html>

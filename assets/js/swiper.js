@@ -18,7 +18,7 @@ const swiperMain = new Swiper('.swiperMain', {
 
 const swiperSecond = new Swiper('.swiperSecond', {
     // Optional parameters 
-    spaceBetween:20,
+    spaceBetween:10,
     slidesPerView:2,
     // If we need pagination   
   
@@ -43,7 +43,7 @@ const swiperSecond = new Swiper('.swiperSecond', {
 
 const swiperPrimary = new Swiper('.swiperPrimary', {
     // Optional parameters 
-    spaceBetween:20,
+    spaceBetween:11,
     slidesPerView:2,
     // If we need pagination   
   

@@ -131,4 +131,24 @@ body{
         margin-right: -10px!important;
     } 
 }
+@media screen and (max-width: 1520px)  {
+    .swiperMain{
+        padding-right: 13px!important;
+        padding-left: 13px!important;
+        box-sizing: content-box!important;   
+        margin-right:-13px!important;
+        margin-left:-13px!important; 
+    }
+
+    .swiperSecond{
+        padding-right: 13px!important;
+        padding-left: 13px!important;
+        box-sizing: content-box!important;   
+        margin-right:-13px!important;
+        margin-left:-13px!important; 
+    }
+
+    
+    
+}
 

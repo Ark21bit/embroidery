@@ -1,13 +1,17 @@
 const swiperMain = new Swiper('.swiperMain', {
     // Optional parameters    
-    loop: true,
-    spaceBetween:32,
-    
+    loop: true,    
+    spaceBetween:0,
+    slidesPerView:1,
+    centeredSlides:true,
+    modules: [EffectCarousel],
+    effect: "carousel",
+    watchSlidesProgress: true,
+    slidesPerGroupAuto: false,    
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    },
-  
+    },  
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

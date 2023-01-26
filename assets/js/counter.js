@@ -1,13 +1,13 @@
 $('body').on('click', '.minus-pcs, .plus-pcs', function(){
-    var $row = $(this).closest('.counter-pcs');
-    var $input = $row.find('.number-pcs');
-    var step = $row.data('step');
-    var val = parseFloat($input.val());
+    let $row = $(this).closest('.counter-pcs');
+    let $input = $row.find('.number-pcs');
+    let step = $row.data('step');
+    let val = parseFloat($input.val());
     
     if ($(this).hasClass('minus-pcs')) {
-        val -= 1;
+        val -= step;
     } else {
-        val += 1;
+        val += step;
     }
    
     $input.val(val);
@@ -16,12 +16,12 @@ $('body').on('click', '.minus-pcs, .plus-pcs', function(){
 });
 
 $('body').on('change', '.number-pcs', function(){
-    var $input = $(this);
-    var $row = $input.closest('.counter-pcs');
-    var step = $row.data('step');
-    var min = parseInt($row.data('min'));
-    var max = parseInt($row.data('max'));
-    var val = parseFloat($input.val());
+    let $input = $(this);
+    let $row = $input.closest('.counter-pcs');
+    let step = $row.data('step');
+    let min = parseInt($row.data('min'));
+    let max = parseInt($row.data('max'));
+    let val = parseFloat($input.val());
     if (isNaN(val)) {
         val = step;
     } else if (min && val < min) {
